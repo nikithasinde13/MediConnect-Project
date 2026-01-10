@@ -1,21 +1,18 @@
-🏥 MediConnect
+🏥 MediConnect – Smart Healthcare Management System
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Status-Active-success" />
-  <img src="https://img.shields.io/badge/Users-Patient%20%26%20Doctor-blue" />
-  <img src="https://img.shields.io/badge/Tech-Java%20%7C%20Spring%20Boot%20%7C%20Angular-orange" />
-</p><p align="center">
-  <b>MediConnect</b> is a modern healthcare management system that bridges the gap between <b>patients</b> and <b>doctors</b> through a secure, user-friendly digital platform.
-</p>
+  <img src="https://img.shields.io/badge/Java-Spring%20Boot-success" />
+  <img src="https://img.shields.io/badge/Frontend-Angular-red" />
+  <img src="https://img.shields.io/badge/Security-JWT-blue" />
+  <img src="https://img.shields.io/badge/Database-MySQL-orange" />
+  <img src="https://img.shields.io/badge/Status-Incremental%20Project-brightgreen" />
+</p><p align="center"><b>A secure, scalable, and role-based healthcare platform connecting Doctors and Patients.</b></p>
 ---
 
-✨ Key Highlights
+✨ Overview
 
-✔ Secure authentication using JWT  
-✔ Separate dashboards for Patients & Doctors  
-✔ Appointment scheduling made simple  
-✔ Digital medical record management  
-✔ Clean, scalable full‑stack architecture
+MediConnect is a full-stack healthcare management system developed as part of the LTIMindtree – L&T Edutech Java Full Stack (Angular) Training Program.
+The application enables seamless interaction between Doctors and Patients, ensuring secure authentication, appointment management, and medical data handling using JWT-based security.
 
 
 ---
@@ -24,24 +21,42 @@
 
 🧑‍⚕️ Doctor
 
-Secure login & profile management
+Secure login using JWT authentication
 
 View assigned patients
 
 Manage appointments
 
-Update diagnoses & prescriptions
+Update patient medical records
 
 
 🧑‍🦱 Patient
 
-Register & login securely
+Secure registration & login
 
-Book doctor appointments
+Book appointments with doctors
 
-View medical history
+View appointment history
 
-Access prescriptions & reports
+Access personal medical details
+
+
+
+---
+
+🧩 Key Features
+
+🔐 JWT-based Authentication & Authorization
+
+🛡️ Role-Based Access Control (Doctor / Patient)
+
+🌐 RESTful APIs using Spring Boot
+
+⚡ Angular frontend with HTTP Interceptors
+
+🗄️ Database persistence using JPA & Hibernate
+
+🔄 CORS-enabled secure frontend-backend communication
 
 
 
@@ -49,126 +64,123 @@ Access prescriptions & reports
 
 🛠️ Tech Stack
 
-🔹 Backend
+Layer	Technology
 
-Java 17
-
-Spring Boot
-
-Spring Security + JWT
-
-RESTful APIs
-
-MySQL / H2 Database
-
-
-🔹 Frontend
-
-Angular
-
-TypeScript
-
-HTML5, CSS3
-
-Bootstrap / Angular Material
+Frontend	Angular, TypeScript, HTML, CSS
+Backend	Java, Spring Boot, Spring Security
+Security	JWT (HS512 Algorithm)
+ORM	JPA, Hibernate
+Database	MySQL
+Tools	Git, GitHub, VS Code
 
 
 
 ---
 
-🏗️ System Architecture
+🔐 Security Flow (JWT)
 
-Frontend (Angular)
-        ↓
-REST API (Spring Boot)
-        ↓
-Database (MySQL)
+1. User logs in with credentials
+
+
+2. Backend validates user details
+
+
+3. JWT token generated using HS512 algorithm
+
+
+4. Token sent to frontend
+
+
+5. Angular attaches token to headers
+
+
+6. JWT filter validates token for every request
+
+
 
 
 ---
 
-🚀 Getting Started
+🧱 Architecture
 
-🔧 Prerequisites
+Angular UI
+   ↓ HTTP Requests
+Spring Boot Controllers
+   ↓
+Service Layer
+   ↓
+DAO / Repository Layer (JPA)
+   ↓
+MySQL Database
 
-Java 17+
 
-Node.js & npm
+---
 
-Angular CLI
+🚀 How to Run the Project
 
-MySQL
-
-
-▶️ Backend Setup
+Backend
 
 cd backend
-mvn clean install
 mvn spring-boot:run
 
-▶️ Frontend Setup
+Frontend
 
 cd frontend
 npm install
 ng serve
 
-Access the application at:
-
-http://localhost:4200
-
 
 ---
 
-🔐 Security
+📂 Project Modules
 
-JWT-based stateless authentication
+Authentication & Authorization
 
-Role-based authorization
+Doctor Management
 
-Secure REST endpoints
+Patient Management
 
+Appointment Scheduling
 
-
----
-
-📌 Project Scope
-
-This project is designed as a capstone / enterprise-level training project, focusing on:
-
-Clean architecture
-
-Secure authentication
-
-Real-world healthcare workflow
+JWT Security Filter
 
 
 
 ---
 
-📈 Future Enhancements
+🎓 Training & Evaluation
 
-Admin role
+✅ Completed All 3 Milestones
 
-Video consultations
+📌 Capstone Project under LTIMindtree – L&T Edutech
 
-Payment gateway integration
-
-Email & SMS notifications
+🧪 Includes Mock Client Interview & Incremental Evaluation
 
 
 
 ---
 
-🤝 Contribution
+📌 Future Enhancements
 
-Contributions are welcome! Feel free to fork this repository and submit pull requests.
+📅 Prescription module
+
+🧾 Medical report uploads
+
+📊 Admin dashboard
+
+☁️ Cloud deployment
+
 
 
 ---
 
-📄 License
+👨‍💻 Developed By
 
-This project is licensed for educational and training purposes.
+Sachin Sam Jacob
+Java Full Stack Trainee (Angular)
+LTIMindtree – L&T Edutech
 
 
 ---
+
+⭐ If you like this project, don’t forget to give it a star on GitHub!
